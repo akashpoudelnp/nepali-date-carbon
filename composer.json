@@ -1,0 +1,28 @@
+{
+  "name": "akashpoudelnp/nepali-date-carbon",
+  "description": "This package will extend the carbon to support for nepali date",
+  "type": "library",
+  "require": {
+    "php": "^8.1"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Akashpoudelnp\\NepaliDateCarbon\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Akashpoudelnp\\NepaliDateCarbon\\NepaliDateCarbonServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Aakash Poudel",
+      "email": "akashpoudelnp@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
