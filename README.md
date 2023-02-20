@@ -2,7 +2,7 @@
 
 <img alt="Packagist Version" src="https://img.shields.io/packagist/v/akashpoudelnp/nepali-date-carbon">
 
-Nepali Carbon is a Laravel package extension that adds support for Nepali date time in the Carbon package of Laravel.
+This package extension that adds support for Nepali date time by extending the functionality of carbon.
 With this package, you can easily convert dates and times between the Gregorian calendar used by Carbon and the Nepali
 calendar.
 
@@ -17,7 +17,7 @@ $ composer require akashpoudelnp/nepali-date-carbon
 ```json
 {
   "require": {
-    "akashpoudelnp/nepali-date-carbon": "^2.16"
+    "akashpoudelnp/nepali-date-carbon": "^0.1"
   }
 }
 ```
