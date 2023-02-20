@@ -14,6 +14,7 @@ class NepaliDateCarbonServiceProvider extends ServiceProvider
         Carbon::macro('convertToBS', function ($translate = false) {
             return (new NepaliDateConverter($this))->convertToBS($translate);
         });
+
     }
 
     public function register()

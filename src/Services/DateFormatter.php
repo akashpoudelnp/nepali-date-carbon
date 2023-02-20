@@ -20,17 +20,8 @@ class DateFormatter
         $this->converter = (new ConverterEngine())->parseFromCarbon($datetime);
     }
 
-    public function baseDateFormat()
+    public function format($format = 'd F, Y h:i a')
     {
-        return $this->format('d F, Y h:i a');
-    }
-
-    public function format($format = null)
-    {
-        if (!$format) {
-            return $this->convertedDateTime;
-        }
-
         $this->format = $format;
 
         $this->parseAndConvert($this->translationEnabled);
