@@ -1,0 +1,43 @@
+name: Documentation Issue
+description: Report issues with the documentation
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+- type: markdown
+  attributes:
+  value: |
+  Thanks for taking the time to help improve our documentation!
+- type: dropdown
+  id: issue-type
+  attributes:
+  label: Type of documentation issue
+  options:
+  - Unclear documentation
+  - Missing documentation
+  - Incorrect information
+  - Typo or formatting issue
+  - Other (please explain below)
+  validations:
+  required: true
+- type: textarea
+  id: issue-description
+  attributes:
+  label: Describe the issue
+  description: Please explain what is wrong or missing in the documentation
+  placeholder: The documentation for X method doesn't explain Y parameter...
+  validations:
+  required: true
+- type: textarea
+  id: suggested-improvement
+  attributes:
+  label: Suggested improvement
+  description: If you have a suggestion for how to fix this issue, please describe it here
+  placeholder: The documentation should mention that Y parameter accepts...
+- type: input
+  id: affected-page
+  attributes:
+  label: Affected page or section
+  description: Which page or section of the documentation contains this issue?
+  placeholder: e.g., README.md, Configuration section
+  validations:
+  required: true

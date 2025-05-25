@@ -2,14 +2,35 @@
   "name": "akashpoudelnp/nepali-date-carbon",
   "description": "This package will extend the carbon to support for nepali date",
   "type": "library",
-  "require": {
-    "php": "^8.1"
-  },
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Aakash Poudel",
+      "email": "akashpoudelnp@gmail.com",
+      "homepage": "https://akashpoudel.com.np",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "BS to AD",
+    "AD to BS",
+    "nepali-date",
+    "laravel nepali-date",
+    "Aakash Poudel"
+  ],
   "autoload": {
     "psr-4": {
       "Akashpoudelnp\\NepaliDateCarbon\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Akashpoudelnp\\NepaliDateCarbon\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^12.15"
   },
   "extra": {
     "laravel": {
@@ -18,11 +39,18 @@
       ]
     }
   },
-  "authors": [
-    {
-      "name": "Aakash Poudel",
-      "email": "akashpoudelnp@gmail.com"
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
     }
-  ],
-  "minimum-stability": "dev"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.3",
+    "pestphp/pest": "^3.8"
+  }
 }
