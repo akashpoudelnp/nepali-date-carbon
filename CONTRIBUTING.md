@@ -5,10 +5,11 @@ effectively.
 
 ## Getting Started
 
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/akashpoudelnp/nepali-date-carbon.git`
-3. Install dependencies: `composer install`
-4. Create a new branch for your feature or fix: `git checkout -b feature-name`
+1. Clone this repository
+2. Create a new branch for your feature or fix: `git checkout -b feature-name`
+3. Commit Changes
+4. Create a PR with Short and Detailed Title
+5. All of the commits will be squashed and merged and PR title will be reflected as the commit message when squashed
 
 ## Development Guidelines
 
