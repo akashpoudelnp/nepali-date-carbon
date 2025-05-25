@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/akashpoudelnp/nepali-date-carbon/discussions/new?category=q-a
+    about: Ask the community for help with using Nepali Date Carbon
+  - name: Request a feature
+    url: https://github.com/akashpoudelnp/nepali-date-carbon/discussions/new?template=feature_request.yml
+    about: Share ideas for new features or improvements
+  - name: Report a security issue
+    url: https://github.com/akashpoudelnp/nepali-date-carbon/security/policy
+    about: Learn how to notify us for sensitive bugs
+  - name: Report a bug
+    url: https://github.com/akashpoudelnp/nepali-date-carbon/issues/new?template=bug_report.yml
+    about: Create a report to help us improve the package
+  - name: Documentation issue
+    url: https://github.com/akashpoudelnp/nepali-date-carbon/issues/new?template=documentation.yml
+    about: Report issues with the documentation
