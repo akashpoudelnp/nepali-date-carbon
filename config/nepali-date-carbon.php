@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'default_format'      => 'Y-m-d', // Default format for BS dates
-    'translate_in_nepali' => true, // Whether to translate numbers and month names to Nepali
-    'calendar_map'        => [
+    'calendar_map'   => [
         0  => [2000, 30, 32, 31, 32, 31, 30, 30, 30, 29, 30, 29, 31],
         1  => [2001, 31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
         2  => [2002, 31, 31, 32, 32, 31, 30, 30, 29, 30, 29, 30, 30],

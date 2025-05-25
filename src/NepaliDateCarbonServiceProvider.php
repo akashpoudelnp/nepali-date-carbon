@@ -46,10 +46,13 @@ final class NepaliDateCarbonServiceProvider extends ServiceProvider
         });
 
         // Static method to create Carbon from BS date
-        Carbon::macro('createFromBS', function (int $year, int $month, int $day) {
+        Carbon::macro('createFromBS', function (int $year, int $month, int $day, int $hour = 0, int $minute = 0, int $second = 0, int $microsecond = 0) {
             $converter = new ConverterEngine();
             $adDate = $converter->convertToAD($year, $month, $day);
-            return Carbon::create($adDate['year'], $adDate['month'], $adDate['day']);
+            return Carbon::createFromFormat(
+                'Y-m-d H:i:s.u',
+                sprintf('%04d-%02d-%02d %02d:%02d:%02d.%06d', $adDate['year'], $adDate['month'], $adDate['day'], $hour, $minute, $second, $microsecond),
+            );
         });
     }
 }
