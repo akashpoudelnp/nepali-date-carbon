@@ -34,6 +34,10 @@ Nepali language.
 
 Install the package via Composer:
 
+```bash
+composer require akashpoudelnp/nepali-date-carbon
+```
+
 ## Documentation
 
 ### Basic Usage
